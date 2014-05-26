@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Jackrabbit::VERSION
   spec.authors       = ["Robert Ross"]
   spec.email         = ["robert@creativequeries.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Work with RabbitMQ in a more sane way}
+  spec.description   = %q{Jackrabbit simplifies doing very common tasks with RabbitMQ}
   spec.homepage      = ""
   spec.license       = "MIT"
 
