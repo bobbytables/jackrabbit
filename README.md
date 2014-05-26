@@ -68,6 +68,16 @@ For example, message acknowledgements become very simple.
 
 Passing in the additional key of `subscription: { ack: true }` details that you want to explicitly ack messages.
 
+### Publishing Messages
+
+Along with subscriptions, you can also publish messages to your client object.
+
+    client = Jackrabbit.new
+    
+    client.publish('my message')
+    client.publish('my message', routing_key: 'my.routing.key')
+    
+This will publish the message **to the exchange, not a queue**.
 
 ### Multiple Exchanges
 
