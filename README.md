@@ -32,7 +32,7 @@ Jackrabbit has an assumption that you're working with 1 exchange most of the tim
     end
 
 Jackrabbit will use the Bunny gem connection you pass in. You must have called #start on it yourself however.
-The reason for this is because in specs you can swap the connection out for something like [BunnyHare](http://github.com/thunderboltlabs/bunny_hair) which tries to mimick Bunny but in memory.
+The reason for this is because in specs you can swap the connection out for something like [BunnyHair](http://github.com/thunderboltlabs/bunny_hair) which tries to mimick Bunny but in memory.
 
 ### Clients
 
@@ -84,7 +84,7 @@ Now your client object will interact with the other exchange you've detailed.
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/jackrabbit/fork )
+1. Fork it ( https://github.com/bobbytables/jackrabbit/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
