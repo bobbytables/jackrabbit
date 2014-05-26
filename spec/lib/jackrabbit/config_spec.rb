@@ -28,4 +28,11 @@ describe Jackrabbit::Config do
     it { has_a_setting_for(:exchange_options) }
     it { has_a_setting_for(:connection) }
   end
+
+  describe 'Sane Defaults' do
+    it 'defaults the exchange options to an empty hash' do
+      config = Jackrabbit::Config.new
+      expect(config.exchange_options).to eq({})
+    end
+  end
 end

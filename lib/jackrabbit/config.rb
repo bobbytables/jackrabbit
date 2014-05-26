@@ -8,5 +8,9 @@ module Jackrabbit
 
     attr_accessor :exchange_name, :exchange_type, :connection
     attr_accessor :exchange_options
+
+    def initialize
+      @exchange_options = {}
+    end
   end
 end
