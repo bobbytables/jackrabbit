@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["robert@creativequeries.com"]
   spec.summary       = %q{Work with RabbitMQ in a more sane way}
   spec.description   = %q{Jackrabbit simplifies doing very common tasks with RabbitMQ}
-  spec.homepage      = ""
+  spec.homepage      = "http://github.com/bobbytables/jackrabbit'"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
