@@ -28,7 +28,7 @@ module Jackrabbit
     def bonded_queue(name, options = {}, &block)
       queue_opts, binding_opts, sub_options = split_options(options)
 
-      queue = channel.queue(name, queue_opts)
+      queue = self.queue(name, queue_opts)
       receiver = MessageReceiver.new(channel, &block)
 
       queue.bind(exchange, binding_opts)
@@ -36,6 +36,10 @@ module Jackrabbit
       queue.subscribe(sub_options) do |info, message, payload|
         receiver.handle(info, message, payload)
       end
+    end
+
+    def queue(name, options)
+      channel.queue(name, options)
     end
 
     private

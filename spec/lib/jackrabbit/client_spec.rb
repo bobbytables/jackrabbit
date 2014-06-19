@@ -61,6 +61,14 @@ describe Jackrabbit::Client do
     end
   end
 
+  describe '#queue' do
+    it 'returns a queue from the channel with the options passed' do
+      queue = client.queue('name', { hello: 'world' })
+      expect(queue.name).to eq('name')
+      expect(queue.options).to eq(hello: 'world')
+    end
+  end
+
   describe '#bonded_queue' do
     def test_queues
       client.channel.test_queues
