@@ -10,7 +10,7 @@ module Jackrabbit
     end
 
     def channel
-      connection.default_channel
+      @channel ||= connection.create_channel
     end
 
     def exchange
